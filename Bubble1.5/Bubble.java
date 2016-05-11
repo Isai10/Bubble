@@ -29,6 +29,10 @@ public class Bubble extends Actor
     public void act() 
     {
         turn(1);
+        
+        /*if(detectRebote()) {
+          moveUp();
+        }*/    
     }
     
     /**
@@ -38,4 +42,15 @@ public class Bubble extends Actor
     {
         return gravityResistance;
     } 
+    
+    /**
+     * moveUp -  eleva la burbuja  
+     */  
+    public void moveUp()
+    {
+        if(Greenfoot.isKeyDown("up")){
+            setLocation(getX(),getY()-1);
+        }
+    }
+    
 }

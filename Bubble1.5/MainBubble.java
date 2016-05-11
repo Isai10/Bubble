@@ -24,5 +24,35 @@ public class MainBubble extends Bubble
     public void act() 
     {
         super.act();
-    }    
+        if(isTouching(Ventilador.class)) {
+           setLocation(getX()+1,getY());
+        }
+    }
+    /**
+     * moveBubble - El metodo mueve la burbuja dependiendo de la fuerza
+     * del viento que le llegue ala burbuja
+     * @param fuerzaViento - fuerza del viento.
+     * @param dirViento - direccion del viento.
+     */
+    public void moveBubble(int fuerzaViento,String dirViento)
+    {
+        if( fuerzaViento == 10 && dirViento == "Up") {
+            
+          
+        }
+       
+        else if( fuerzaViento == 10 && dirViento == "Down") {
+            
+          
+        }
+        else if( fuerzaViento == 10 && dirViento == "Left") {
+            
+          
+        }
+        else if( fuerzaViento == 10 && dirViento == "Right") {
+            
+          
+        }
+    }
+    
 }
