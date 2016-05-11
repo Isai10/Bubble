@@ -17,7 +17,7 @@ public class WorldPlay extends ScrollWorld
      */
     public WorldPlay(float worldGravity)
     {    
-        super(600, 300, 1, 1280, 320);
+        super(1000, 545, 1, 8000, 545);
         gravity = worldGravity;
     }
     

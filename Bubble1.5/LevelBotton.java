@@ -14,6 +14,7 @@ public class LevelBotton extends Botton
      */
     public void act() 
     {
+        super.act();
         if(Greenfoot.mouseClicked(this))
         {
             setImage("levelbreak.png");
@@ -21,6 +22,18 @@ public class LevelBotton extends Botton
             Level screen = new Level();
             Greenfoot.setWorld(screen);
         }
-        
+            
     }    
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
